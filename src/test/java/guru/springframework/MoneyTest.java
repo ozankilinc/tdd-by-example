@@ -11,4 +11,12 @@ public class MoneyTest {
         five.times(2);
         assertEquals(10, five.amount);
     }
+
+    @Test
+    void testSummationWithDrowBack() {
+        Dollar five = new Dollar(5);
+        five.summation(56);
+        assertEquals(61, five.amount);
+
+    }
 }

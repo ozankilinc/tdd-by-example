@@ -11,4 +11,8 @@ public class Dollar {
     void times(int multiplier){
         this.amount *= multiplier;
     }
+
+    public void summation(int summationPrice) {
+        this.amount += summationPrice;
+    }
 }
