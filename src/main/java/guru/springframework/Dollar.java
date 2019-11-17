@@ -8,11 +8,11 @@ public class Dollar {
 
     }
 
-    void times(int multiplier){
-        this.amount *= multiplier;
+    public Dollar times(int multiplier){
+        return new Dollar(amount * multiplier);
     }
 
-    public void summation(int summationPrice) {
-        this.amount += summationPrice;
+    public Dollar summation(int summationPrice) {
+        return new Dollar(amount + summationPrice);
     }
 }
